@@ -1,1 +1,0 @@
-# uberdelta.github.io
