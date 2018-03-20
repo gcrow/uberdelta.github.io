@@ -1,0 +1,3 @@
+node_modules/*
+front-static/js/*
+#  front-static/css/*

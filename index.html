@@ -24,8 +24,8 @@
     <meta name="description" content="UberDelta is decentralized SEC token exchange application and user experience that supports multiple tokens and cross network token transfers fairly via market participant protections.">
     <meta property="og:description" content="UberDelta is decentralized SEC token exchange application and user experience that supports multiple tokens and cross network token transfers fairly via market participant protections. ">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Product+Sans:400,500&lang=en" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/main.css">
-    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="front-static/css/main.css">
+    <link rel="stylesheet" href="front-static/css/home.css">
 </head>
 
 <body id="top">
@@ -490,17 +490,20 @@
                                 <!--<div class="box__body">Get UberDelta Updates. We won’t share your email with any third party.</div>-->
                                 <label forhtml="mce-EMAIL">Subscribe to our mailing list to be the first to hear of news and announcements</label>
 
-                                <!--
-                                <div class="box__cta">
-                                    <a href="#" class="button">Subscribe</a>
-                                </div>
-                            -->
+                                
+                           
+                            
                             <br>
-                            <input type="email" defaultValue="" name="EMAIL" class=""  id="mce-EMAIL" placeholder="email address" required />
+                            <input type="email" defaultValue="" name="EMAIL" class="box__cta"  id="mce-EMAIL" placeholder="email address" required />
                            <!-- <div style={{position:"absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_2d3842e4a767b41ce4f094c6a_33da2f33e4" tabIndex="-1" defaultValue="" /></div>-->
 
-                            
-                            <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>                            
+                            <!--
+                           <div class="box__cta">
+                                <a href="#" class="button">Subscribe</a>
+                            </div>
+                        -->
+                            <div class="box__cta">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>                            
                             </div>
                         </aside>
                     </div>
@@ -617,7 +620,7 @@
 
                     <!-- array -->
                     <!--<img class="hor__image hor__image--flex" src="assets/UberDelta-UI.jpg?1" alt="UberDelta UI"> -->
-                    <img class="hor__image hor__image--flex" src="assets/UberDelta-UI-2.png?1" alt="UberDelta UI">
+                    <img class="hor__image hor__image--flex" src="front-assets/UberDelta-UI-2.png?1" alt="UberDelta UI">
 
 
                 </div>
@@ -850,18 +853,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ColorPropsPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.0/pixi.min.js"></script>
 
-    <!--<firbase->  -->
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js"></script>
-
-
-
-    <script src="static/js/main.js"></script>
-    <script src="static/js/home.js"></script>
+    <script src="./dist/js/bundle.js"></script>
 
     <script>
 //analytics
