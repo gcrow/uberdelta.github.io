@@ -834,7 +834,8 @@
 .contentboxes .contentboxes__box .contentboxes__box__image {
     height: 40px;
     vertical-align: middle;
-    width: 40px
+    width: 40px;
+    padding-right:14px;
 }
 
 .contentboxes .contentboxes__box .contentboxes__box__image img {
