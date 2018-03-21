@@ -555,7 +555,7 @@
     display: inline-block;
     font-weight: 100;
     letter-spacing: 2px;
-    padding: 10px 50px;
+    padding: 13px 50px;
     text-transform: uppercase;
     transition: all 200ms ease
 }
@@ -641,9 +641,11 @@ body {
     font-size: 15px;
     line-height: 1.87;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #424242;
     background-color: #FAFAFA;
     font-family: Roboto, arial, sans-serif;
+    letter-spacing: .01em;
     margin: 0;
     padding-top: 48px;
     overflow-x: hidden
@@ -1146,6 +1148,7 @@ input {
     -webkit-appearance: none;
     flex: 1 1 0%;
     padding: 16px 26px;
+    width:200px;
     border-radius: 2px;
     border: 1px solid #565f66;
 }
@@ -1155,6 +1158,7 @@ input[type="submit" i], input[type="reset" i] {
    border: none;
    font-size: 15px;
     line-height: 1.87;
+    width: 254px;
 }
 
 
