@@ -547,7 +547,20 @@
     margin-bottom: 20px
 }
 
-.button {
+.button, #signup-saft {
+  /*  background: #28CA41; */
+  background: #03E38B;
+    border-radius: 2px;
+    color: #FFF;
+    display: inline-block;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 200ms ease
+}
+
+#signup-saft {
   /*  background: #28CA41; */
   background: #03E38B;
     border-radius: 2px;
