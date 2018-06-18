@@ -1,0 +1,149 @@
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #f9fbff;
+  margin: 0; }
+
+@media (min-width: 1500px) {
+  body {
+    font-size: 18px; } }
+
+@media (min-width: 2000px) {
+  body {
+    font-size: 20px; } }
+
+@media (min-width: 2500px) {
+  body {
+    font-size: 22px; } }
+
+.rgx-main-section {
+  padding: 3em 7%;
+  background-color: #013997; }
+
+.rgx-header-section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+@media (max-width: 780px) {
+  .rgx-header-section {
+    flex-direction: column; } }
+
+.rgx-logo-header {
+  background: url("../assets/rengenx.svg") no-repeat 50%;
+  background-size: contain;
+  width: 450px;
+  height: 108px; }
+
+.rgx-header-section > div {
+  margin: 3em; }
+
+.rgx-header-section-left {
+  flex: 1 1 60%;
+  max-width: 35em; }
+
+.rgx-header-description {
+  font-size: 2em;
+  margin: 0.5em 0; }
+
+.rgx-header-section-right {
+  padding: 3em;
+  background-color: #f9fbff;
+  color: #011b47;
+  flex: 1 1 40%;
+  max-width: 30em; }
+
+.rgx-signup-button {
+  width: 100%;
+  background-color: #0058ee;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  border-radius: 3px;
+  padding: 0.5em 0;
+  margin-top: 2em;
+  display: inline-block;
+  text-align: center;
+  transition: 0.1s background-color; }
+
+.rgx-signup-button:hover,
+.rgx-signup-button:active,
+.rgx-signup-button:focus {
+  background-color: #0b65ff;
+  text-decoration: none; }
+
+.rgx-signup-button:visited {
+  color: white;
+  text-decoration: none; }
+
+.rgx-justified-text {
+  text-align: justify;
+  margin: 1em 0; }
+
+h2 {
+  margin-top: 0; }
+
+.rgx-screenshot {
+  display: none; }
+
+.rgx-demo-screenshot {
+  width: 100%; }
+
+@media (max-width: 1130px) {
+  .rgx-screenshot {
+    display: block; }
+  .rgx-iframe {
+    display: none; } }
+
+.rgx-demo {
+  width: 100%;
+  height: 785px;
+  border: none;
+  outline: 1px solid #ccc; }
+
+.rgx-grid-layout {
+  margin: 0 -1em;
+  display: flex;
+  flex-wrap: wrap; }
+
+.rgx-tile {
+  background-color: #f9fbff;
+  color: #011b47;
+  margin: 2.5%;
+  width: 20%; }
+
+@media (max-width: 1250px) {
+  .rgx-tile {
+    width: 45%; } }
+
+@media (max-width: 570px) {
+  .rgx-tile {
+    width: 100%; } }
+
+.rgx-tile-header {
+  display: flex;
+  align-items: center;
+  padding: 1em 2em;
+  justify-content: center; }
+
+.rgx-tile-icon {
+  width: 3em;
+  height: 3em;
+  flex-shrink: 0;
+  min-width: 0;
+  display: inline-block;
+  margin-right: 1em; }
+
+.rgx-tile-title {
+  display: inline-block; }
+
+.rgx-tile-body {
+  padding: 1em;
+  text-align: center; }
+
+.rgx-safe-icon {
+  transform: translateY(3px); }
