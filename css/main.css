@@ -160,6 +160,16 @@ h2 {
   z-index: 1;
   border: 5px solid #0058ee; }
 
+.rgx-linked-in-link {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .rgx-linked-in-link > .rgx-bio-img {
+    width: 100%; }
+  .rgx-linked-in-link:hover > .rgx-bio-img {
+    filter: brightness(1.1); }
+
 .rgx-bio-content {
   text-align: center;
   margin-top: 0.5em;
