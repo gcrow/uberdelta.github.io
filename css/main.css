@@ -2,7 +2,8 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: #f9fbff;
-  margin: 0; }
+  margin: 0;
+  background-color: #013997; }
 
 @media (min-width: 1500px) {
   body {
@@ -17,8 +18,7 @@ body {
     font-size: 22px; } }
 
 .rgx-main-section {
-  padding: 7em 7% 1em;
-  background-color: #013997; }
+  padding: 7em 7% 1em; }
 
 .rgx-header-section {
   padding-top: 10vh;
@@ -29,9 +29,10 @@ body {
   justify-content: space-around;
   align-items: center; }
 
-@media (max-width: 780px) {
+@media (max-width: 850px) {
   .rgx-header-section {
-    flex-direction: column; } }
+    flex-direction: column;
+    padding-bottom: 10vh; } }
 
 .rgx-logo-header {
   background: url("../assets/rengenx.svg") no-repeat 50%;
@@ -43,7 +44,7 @@ body {
   margin: 3em; }
 
 .rgx-header-section-left {
-  flex: 1 1 60%;
+  flex: 0 1 60%;
   max-width: 35em; }
 
 .rgx-header-description {
@@ -54,7 +55,7 @@ body {
   padding: 3em;
   background-color: #f9fbff;
   color: #011b47;
-  flex: 1 1 40%;
+  flex: 0 1 40%;
   max-width: 30em; }
 
 .rgx-signup-button {
@@ -65,11 +66,12 @@ body {
   text-decoration: none;
   letter-spacing: 0.25em;
   border-radius: 3px;
-  padding: 0.5em 0;
+  padding: 0.5em;
   margin-top: 2em;
   display: inline-block;
   text-align: center;
-  transition: 0.1s background-color; }
+  transition: 0.1s background-color;
+  box-sizing: border-box; }
 
 .rgx-signup-button:hover,
 .rgx-signup-button:active,
@@ -121,16 +123,6 @@ h2 {
 .rgx-bio-tile {
   margin: 2.5%;
   width: 20%; }
-
-@media (max-width: 1250px) {
-  .rgx-tile,
-  .rgx-bio-tile {
-    width: 45%; } }
-
-@media (max-width: 570px) {
-  .rgx-tile,
-  .rgx-bio-tile {
-    width: 100%; } }
 
 .rgx-tile-header {
   display: flex;
@@ -189,7 +181,8 @@ h2 {
   text-decoration: none;
   color: #f9fbff;
   transition: 0.3s color;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin: 0 0.5em; }
   .rgx-header-link:hover, .rgx-header-link:active, .rgx-header-link:visited, .rgx-header-link:focus {
     text-decoration: none; }
   .rgx-header-link:hover {
@@ -200,3 +193,49 @@ h2 {
   background-size: contain;
   width: 6.5em;
   height: 3em; }
+
+.shouldAnimate {
+  visibility: hidden; }
+
+.animation-delay-1,
+.animation-delay-4 {
+  animation-delay: 0.1s; }
+
+.animation-delay-2,
+.animation-delay-5 {
+  animation-delay: 0.2s; }
+
+.animation-delay-3,
+.animation-delay-6 {
+  animation-delay: 0.3s; }
+
+.animation-delay-7 {
+  animation-delay: 0.4s; }
+
+@media (max-width: 1250px) {
+  .rgx-tile,
+  .rgx-bio-tile {
+    width: 45%; }
+  .animation-delay-2 {
+    animation-delay: 0.1s; }
+  .animation-delay-3,
+  .animation-delay-4 {
+    animation-delay: 0.2s; }
+  .animation-delay-5,
+  .animation-delay-6 {
+    animation-delay: 0.3s; } }
+
+@media (max-width: 570px) {
+  .rgx-tile,
+  .rgx-bio-tile {
+    width: 100%; }
+  .animation-delay-1,
+  .animation-delay-2,
+  .animation-delay-3,
+  .animation-delay-4,
+  .animation-delay-5,
+  .animation-delay-6,
+  .animation-delay-7 {
+    animation-delay: 0s; }
+  .rgx-logo {
+    display: none; } }
