@@ -35,17 +35,16 @@ body {
     padding-bottom: 10vh; } }
 
 .rgx-logo-header {
-  background: url("../assets/rengenx.svg") no-repeat 50%;
-  background-size: contain;
-  width: 450px;
-  height: 108px; }
+  width: 100%;
+  max-width: 40em; }
 
 .rgx-header-section > div {
   margin: 3em; }
 
 .rgx-header-section-left {
   flex: 0 1 60%;
-  max-width: 35em; }
+  max-width: 100%;
+  box-sizing: border-box; }
 
 .rgx-header-description {
   font-size: 2em;
@@ -56,7 +55,9 @@ body {
   background-color: #f9fbff;
   color: #011b47;
   flex: 0 1 40%;
-  max-width: 30em; }
+  max-width: 30em;
+  border: 5px solid #0058ee;
+  box-sizing: border-box; }
 
 .rgx-signup-button {
   width: 100%;
@@ -117,7 +118,9 @@ h2 {
 
 .rgx-tile {
   background-color: #f9fbff;
-  color: #011b47; }
+  color: #011b47;
+  border: 5px solid #0058ee;
+  box-sizing: border-box; }
 
 .rgx-tile,
 .rgx-bio-tile {
@@ -155,7 +158,7 @@ h2 {
   min-width: 150px;
   border-radius: 50%;
   z-index: 1;
-  border: 5px solid #00ebe2; }
+  border: 5px solid #0058ee; }
 
 .rgx-bio-content {
   text-align: center;
@@ -193,6 +196,11 @@ h2 {
   background-size: contain;
   width: 6.5em;
   height: 3em; }
+  .rgx-logo:hover {
+    background: url("../assets/RGX_hover.svg") no-repeat 50%;
+    background-size: contain;
+    width: 6.5em;
+    height: 3em; }
 
 .shouldAnimate {
   visibility: hidden; }
@@ -243,3 +251,15 @@ h2 {
 .rgx-footer {
   font-size: 0.8125em;
   animation-duration: 2s !important; }
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px; }
+  .rgx-header-description {
+    font-size: 1.75em; } }
+
+@media (max-width: 365px) {
+  body {
+    font-size: 12px; }
+  .rgx-header-description {
+    font-size: 1.75em; } }
