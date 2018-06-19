@@ -17,13 +17,14 @@ body {
     font-size: 22px; } }
 
 .rgx-main-section {
-  padding: 3em 7%;
+  padding: 7em 7% 1em;
   background-color: #013997; }
 
 .rgx-header-section {
   padding-top: 10vh;
-  padding-bottom: 10vh;
-  min-height: 80vh;
+  padding-bottom: 20vh;
+  min-height: 100vh;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -161,7 +162,8 @@ h2 {
   width: 45%;
   min-width: 150px;
   border-radius: 50%;
-  z-index: 1; }
+  z-index: 1;
+  border: 5px solid #00ebe2; }
 
 .rgx-bio-content {
   text-align: center;
@@ -170,3 +172,31 @@ h2 {
 
 .rgx-safe-icon {
   transform: translateY(3px); }
+
+.rgx-header {
+  background: #013997;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1em 7%; }
+
+.rgx-header-link {
+  text-decoration: none;
+  color: #f9fbff;
+  transition: 0.3s color;
+  font-size: 1.5em; }
+  .rgx-header-link:hover, .rgx-header-link:active, .rgx-header-link:visited, .rgx-header-link:focus {
+    text-decoration: none; }
+  .rgx-header-link:hover {
+    color: #00ebe2; }
+
+.rgx-logo {
+  background: url("../assets/RGX.svg") no-repeat 50%;
+  background-size: contain;
+  width: 6.5em;
+  height: 3em; }
