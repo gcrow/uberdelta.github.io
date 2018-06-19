@@ -196,6 +196,11 @@ h2 {
   background-size: contain;
   width: 6.5em;
   height: 3em; }
+  .rgx-logo::after {
+    content: "";
+    background: url("../assets/RGX_hover.svg") no-repeat 50%;
+    width: 0;
+    height: 0; }
   .rgx-logo:hover {
     background: url("../assets/RGX_hover.svg") no-repeat 50%;
     background-size: contain;

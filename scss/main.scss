@@ -254,6 +254,14 @@ h2 {
   width: 6.5em;
   height: 3em;
 
+  //to load hover svg on pageload
+  &::after {
+    content: "";
+    background: url("../assets/RGX_hover.svg") no-repeat 50%;
+    width: 0;
+    height: 0;
+  }
+
   &:hover {
     background: url("../assets/RGX_hover.svg") no-repeat 50%;
     background-size: contain;
