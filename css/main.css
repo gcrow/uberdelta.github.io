@@ -3,7 +3,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #f9fbff;
   margin: 0;
-  background-color: #013997; }
+  background: linear-gradient(to bottom, #013997 5%, #0149c3 25%, #0149c3 40%, #013997 90%); }
   body::before {
     content: "";
     position: fixed;
@@ -12,7 +12,7 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0.6;
-    transform: translateZ(1000px); }
+    z-index: -1; }
 
 @media (min-width: 1500px) {
   body {
@@ -164,7 +164,8 @@ h2 {
 
 .rgx-bio-img {
   width: 45%;
-  min-width: 150px;
+  min-width: 220px;
+  max-width: 300px;
   border-radius: 50%;
   z-index: 1;
   border: 5px solid #0058ee; }
@@ -206,7 +207,7 @@ h2 {
     height: 5em;
     width: 100%;
     opacity: 0.6;
-    transform: translateZ(1000px); }
+    z-index: -1; }
 
 .rgx-header-link {
   text-decoration: none;
