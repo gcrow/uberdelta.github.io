@@ -288,7 +288,7 @@ h2 {
   }
 
   &:hover {
-    color: $secondary-color;
+    color: #0b65ff;
   }
 }
 
@@ -405,5 +405,55 @@ h2 {
 
   .rgx-header-description {
     font-size: 1.75em;
+  }
+}
+
+@keyframes rgx-bounce {
+  0% {
+    top: 0px;
+  }
+  10% {
+    top: 0.25em;
+  }
+  27% {
+    top: 0px;
+  }
+  40% {
+    top: 0.4em;
+  }
+  60% {
+    top: 0px;
+  }
+}
+
+.rgx-scroll-indicator {
+  position: absolute;
+  bottom: 0px;
+  transition: opacity 0.5s;
+
+  .rgx-header-section > & {
+    margin: 0 0 3em;
+    font-size: 1.25em;
+  }
+
+  &::after {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: $light-color;
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    margin: 0.5em auto 0;
+
+    animation-name: rgx-bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+
+  &.fadeOutUp {
+    cursor: default;
   }
 }

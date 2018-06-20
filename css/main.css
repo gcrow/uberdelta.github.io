@@ -219,7 +219,7 @@ h2 {
   .rgx-header-link:hover, .rgx-header-link:active, .rgx-header-link:visited, .rgx-header-link:focus {
     text-decoration: none; }
   .rgx-header-link:hover {
-    color: #00ebe2; }
+    color: #0b65ff; }
 
 .rgx-logo {
   background: url("../assets/RGX.svg") no-repeat 50%;
@@ -300,3 +300,39 @@ h2 {
     font-size: 12px; }
   .rgx-header-description {
     font-size: 1.75em; } }
+
+@keyframes rgx-bounce {
+  0% {
+    top: 0px; }
+  10% {
+    top: 0.25em; }
+  27% {
+    top: 0px; }
+  40% {
+    top: 0.4em; }
+  60% {
+    top: 0px; } }
+
+.rgx-scroll-indicator {
+  position: absolute;
+  bottom: 0px;
+  transition: opacity 0.5s; }
+  .rgx-header-section > .rgx-scroll-indicator {
+    margin: 0 0 3em;
+    font-size: 1.25em; }
+  .rgx-scroll-indicator::after {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: #f9fbff;
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    margin: 0.5em auto 0;
+    animation-name: rgx-bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease; }
+  .rgx-scroll-indicator.fadeOutUp {
+    cursor: default; }
