@@ -4,49 +4,63 @@
 <head>
   <meta charset="utf-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="rengenx-favicon.ico">
   <title>RenGenX</title>
 
   <meta itemprop="name" content="RenGenX">
-  <meta itemprop="description" content="RenGenX is decentralized SEC token exchange application and user experience that supports multiple tokens and cross network token transfers fairly via market participant protections.">
-  <meta itemprop="url" content="https://uberdelta.com/">
+  <meta itemprop="description" content="RenGenX is decentralized equity token exchange that supports multiple tokens and cross network token transfers fairly via market participant protections.">
+  <meta itemprop="url" content="https://www.rengenx.com/">
   <meta itemprop="location" content="New York, NY">
 
-  <meta property="og:url" content="https://uberdelta.com">
+  <meta property="og:url" content="https://www.rengenx.com">
   <meta property="og:title" content="RenGenX">
   <meta property="og:site_name" content="RenGenX">
-  <meta name="description" content="RenGenX is decentralized SEC token exchange application and user experience that supports multiple tokens and cross network token transfers fairly via market participant protections.">
-  <meta property="og:description" content="RenGenX is decentralized SEC token exchange application and user experience that supports multiple tokens and cross network token transfers fairly via market participant protections. ">
+  <meta name="description" content="RenGenX is decentralized equity token exchange that supports multiple tokens and cross network token transfers fairly via market participant protections.">
+  <meta property="og:description" content="RenGenX is decentralized equity token exchange that supports multiple tokens and cross network token transfers fairly via market participant protections.">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <noscript>
+    <style>
+      .shouldAnimate {
+        visibility: visible !important;
+      }
+    </style>
+  </noscript>
 </head>
 
 <body>
-  <div class="rgx-main-section rgx-header-section">
-    <div class="rgx-header-section-left">
-      <div class="rgx-logo-header">
-        RenGenX
-      </div>
-      <div class="rgx-header-description">
+  <div class="rgx-header" id="rgx-header">
+    <a href="#rengenx" class="rgx-logo animated fadeIn"></a>
+    <a href="#features" class="rgx-header-link animated fadeIn">FEATURES</a>
+    <a href="#vision" class="rgx-header-link animated fadeIn">VISION</a>
+    <a href="#team" class="rgx-header-link animated fadeIn">TEAM</a>
+    <a href="#demo" class="rgx-header-link animated fadeIn">DEMO</a>
+  </div>
+  <div class="rgx-main-section rgx-header-section" id="rengenx">
+    <div class="rgx-header-section-left animated fadeInUp">
+      <img src="../assets/rengenx.svg" class="rgx-logo-header animated fadeInDown">
+      <div class="rgx-header-description animated fadeInDown">
         Decentralized Equity Token Exchange
       </div>
-      <div class="rgx-header-sub-description">
+      <div class="rgx-header-sub-description animated fadeInDown">
         Q2 2018
       </div>
     </div>
-    <div class="rgx-header-section-right">
+    <div class="rgx-header-section-right animated fadeInUp">
       <div class="">
         Register for early access to our upcoming equity token sale.
       </div>
       <a href="https://www.rengenlabs.com/signup" target="_blank" class="rgx-signup-button" tabindex="0">REGISTER</a>
     </div>
+    <div class="rgx-scroll-indicator animated fadeInDown">SCROLL</div>
   </div>
-  <div class="rgx-main-section odd">
-    <h2 style="margin-bottom: 0;">Product Features</h2>
+  <div class="rgx-main-section" id="features">
+    <h2 style="margin-bottom: 0;" class="shouldAnimate">Product Features</h2>
     <div class="rgx-grid-layout">
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-compliance.svg">
@@ -59,7 +73,7 @@
           Sophisticated Compliance: Trade-level Rules
         </div>
       </div>
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate animation-delay-1">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-circles.svg">
@@ -72,7 +86,7 @@
           Multiple protocol token support (ERC20, ERC223, others)
         </div>
       </div>
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate animation-delay-2">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-options.svg">
@@ -85,7 +99,7 @@
           Peer-to-Peer leverage utilizing covered options
         </div>
       </div>
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate animation-delay-3">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-scales.svg">
@@ -98,7 +112,7 @@
           Optional directed trades to prevent front-running
         </div>
       </div>
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate animation-delay-4">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-regulation.svg">
@@ -111,7 +125,7 @@
           Designed to operate as a regulated exchange
         </div>
       </div>
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate animation-delay-5">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-chain.svg">
@@ -124,7 +138,7 @@
           Central components are designed for stability and reliability
         </div>
       </div>
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate animation-delay-6">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-safe.svg" class="rgx-safe-icon">
@@ -137,7 +151,7 @@
           Empowering professional investors to maintain custody and implement their own cybersecurity protocols
         </div>
       </div>
-      <div class="rgx-tile">
+      <div class="rgx-tile shouldAnimate animation-delay-7">
         <div class="rgx-tile-header">
           <div class="rgx-tile-icon">
             <img src="icons/icon-integration.svg">
@@ -152,15 +166,15 @@
       </div>
     </div>
   </div>
-  <div class="rgx-main-section">
-    <h2>RenGenX’s Vision</h2>
-    <div class="rgx-justified-text">
+  <div class="rgx-main-section" id="vision">
+    <h2 class="shouldAnimate">Vision</h2>
+    <div class="rgx-justified-text shouldAnimate">
       One of the first decentralized exchange traders was RenGenX founder M. J. Dillon. When early versions of decentralized trading
       began to appear in 2016, he began to work closely with the founder of EtherDelta to improve that platform. Along with
       RenGenX team member Tim Haberham, Dillon was instrumental in helping to engage and support hundreds of the earliest
       decentralized exchange traders and developers.
     </div>
-    <div class="rgx-justified-text">
+    <div class="rgx-justified-text shouldAnimate animation-delay-1">
       RenGenX today is already a functional technology available for beta testing on the Ethereum network. Powered by possibly
       one of the most advanced smart contracts ever deployed on the Ethereum network, this feature-rich, compliance-focused
       smart contract expects to allow peer-to-peer leverage, the creation and trading of options on tokens, and directed
@@ -168,20 +182,88 @@
       a reactive and clear user interface, and a backend order book system that intends to prevent fat-finger errors and
       eliminates the possibility of front-running directed trades.
     </div>
-    <div class="rgx-justified-text">
+    <div class="rgx-justified-text shouldAnimate animation-delay-2">
       The intended flexible and upgradeable compliance functionality would allow restricted tokens to trade under custom conditions.
       With RenGenX’s anticipated trade-level, smart contract based, compliance engine, this exchange would provide a decentralized
       marketplace for restricted tokens that could potentially adapt to future changes to the international regulatory environment
       as they happen.
     </div>
-    <div class="rgx-justified-text">
+    <div class="rgx-justified-text shouldAnimate animation-delay-3">
       RenGenX’s vision is to evolve their existing Ethereum-based decentralized exchange into a multitude of decentralized exchanges
       powered by other blockchains (such as EOS and Neo) along with institutional grade position management tools and custom
       reporting (P&amp;L, historical positions, tax reporting) utilizing their custom multi-chain block explorer.
     </div>
 
   </div>
-  <div class="rgx-main-section odd rgx-iframe javascript-enabled">
+  <div class="rgx-main-section" id="team">
+    <h2 class="shouldAnimate">Team</h2>
+    <div class="rgx-grid-layout">
+      <div class="rgx-bio-tile shouldAnimate">
+        <a href="https://www.linkedin.com/in/mjdillon/" class="rgx-linked-in-link" target="_blank">
+          <img src="../assets/rengenx_dillon.png" class="rgx-bio-img">
+        </a>
+        <div class="rgx-bio-content">
+          <div class="rgx-bio-name">Michael Dillon</div>
+          <div class="rgx-bio-role">Founder</div>
+        </div>
+      </div>
+      <div class="rgx-bio-tile shouldAnimate animation-delay-1">
+        <a href="https://www.linkedin.com/in/cassandra-dunlop-36447054/" class="rgx-linked-in-link" target="_blank">
+          <img src="../assets/rengenx_cassandra.jpeg" class="rgx-bio-img">
+        </a>
+        <div class="rgx-bio-content">
+          <div class="rgx-bio-name">Cassandra Dunlop</div>
+          <div class="rgx-bio-role">Lead Software Developer</div>
+        </div>
+      </div>
+      <div class="rgx-bio-tile shouldAnimate animation-delay-2">
+        <a href="https://github.com/DeltaBalances" class="rgx-linked-in-link" target="_blank">
+          <img src="../assets/rengenx_tim.png" class="rgx-bio-img">
+        </a>
+        <div class="rgx-bio-content">
+          <div class="rgx-bio-name">Tim Haberham</div>
+          <div class="rgx-bio-role">Lead Blockchain Developer</div>
+        </div>
+      </div>
+      <div class="rgx-bio-tile shouldAnimate animation-delay-3">
+        <a href="https://www.linkedin.com/in/octaviolicon/" class="rgx-linked-in-link" target="_blank">
+          <img src="../assets/rengenx_octavio.png" class="rgx-bio-img">
+        </a>
+        <div class="rgx-bio-content">
+          <div class="rgx-bio-name">Octavio Licon</div>
+          <div class="rgx-bio-role">Software Developer</div>
+        </div>
+      </div>
+      <div class="rgx-bio-tile shouldAnimate animation-delay-4">
+        <a href="https://www.linkedin.com/in/willshi/" class="rgx-linked-in-link" target="_blank">
+          <img src="../assets/rengenx_will.png" class="rgx-bio-img">
+        </a>
+        <div class="rgx-bio-content">
+          <div class="rgx-bio-name">William Shi</div>
+          <div class="rgx-bio-role">Software Developer</div>
+        </div>
+      </div>
+      <div class="rgx-bio-tile shouldAnimate animation-delay-5">
+        <a href="https://www.linkedin.com/in/stephen-decker-4bb68061/" class="rgx-linked-in-link" target="_blank">
+          <img src="../assets/rengenx_stephen.png" class="rgx-bio-img">
+        </a>
+        <div class="rgx-bio-content">
+          <div class="rgx-bio-name">Stephen Decker</div>
+          <div class="rgx-bio-role">Software Developer</div>
+        </div>
+      </div>
+      <div class="rgx-bio-tile shouldAnimate animation-delay-6">
+        <a href="https://www.linkedin.com/in/evan-johnson-7510aa57/" class="rgx-linked-in-link" target="_blank">
+          <img src="../assets/rengenx_evan.png" class="rgx-bio-img">
+        </a>
+        <div class="rgx-bio-content">
+          <div class="rgx-bio-name">Evan Johnson</div>
+          <div class="rgx-bio-role">Software Developer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rgx-main-section rgx-iframe javascript-enabled shouldAnimate" id="demo">
     <h2>Live Demo</h2>
     <iframe src="https://www.otherdelta.com" class="rgx-demo"></iframe>
 
@@ -196,7 +278,7 @@
         display: none;
       }
     </style>
-    <div class="rgx-main-section odd rgx-iframe">
+    <div class="rgx-main-section rgx-iframe shouldAnimate">
       <h2>Exchange Screenshot</h2>
       <img src="rengenx.png" class="rgx-demo-screenshot" alt="RenGenX Screenshot">
       <div class="rgx-justified-text">
@@ -204,7 +286,7 @@
       </div>
     </div>
   </noscript>
-  <div class="rgx-main-section odd rgx-screenshot">
+  <div class="rgx-main-section rgx-screenshot shouldAnimate">
     <h2>Exchange Screenshot</h2>
     <img src="rengenx.png" class="rgx-demo-screenshot" alt="RenGenX Screenshot">
     <div class="rgx-justified-text">
@@ -212,25 +294,25 @@
     </div>
   </div>
   <div class="rgx-main-section">
-    <div class="rgx-justified-text">
+    <div class="rgx-justified-text shouldAnimate">
       <b>
         RenGenX anticipates meeting the expected overwhelming need for a equity token exchange. Tokenized securities have potential
         to be the future of investment in early-stage startups, and these professional investors should demand institutional
         grade tools and desire a single platform to manage assets on a variety of blockchain networks.
       </b>
     </div>
-    <div class="rgx-justified-text">
+    <div class="rgx-justified-text shouldAnimate animation-delay-1">
       RenGenX’s expected advanced compliance engine would enable this exchange to provide a decentralized marketplace for restricted
       tokens and adapt to changes in securities classifications and regulations. By working with our AML/KYC partners, we
       expect to be able to support institutional investors across the globe.
     </div>
-    <div class="rgx-justified-text">
+    <div class="rgx-justified-text shouldAnimate animation-delay-2">
       Decentralized exchanges are likely an elegant solution to many of the security and custody issues that centralized exchanges
       may face by potentially empowering professional investors to maintain custody and implement their own cybersecurity
       protocols. RenGenX’s goal is to become the premier regulated token exchange.
     </div>
   </div>
-  <div class="rgx-main-section odd" style="font-size: 0.8125em;">
+  <div class="rgx-main-section animated fadeIn rgx-footer">
     <div class="rgx-justified-text">
       &copy; Copyright RenGenX 2018
     </div>
@@ -244,10 +326,12 @@
     </div>
     <div class="rgx-justified-text">
       This website does not constitute an offer, distribution, solicitation, or marketing of securities to any non-Qualified Person
-      [and is not an offering to the retail public in any jurisdiction where such offering is unlawful. You should disregard
+      and is not an offering to the retail public in any jurisdiction where such offering is unlawful. You should disregard
       this if you are a non-Qualified Person.
     </div>
   </div>
 </body>
+
+<script src="./main.js"></script>
 
 </html>
