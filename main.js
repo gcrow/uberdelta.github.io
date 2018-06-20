@@ -22,7 +22,11 @@ function scrollHandler(e, initialRun) {
 
   for (var i = 0; i < elementsToAnimate.length; i++) {
     var elem = elementsToAnimate[i];
-    if (window.scrollY + window.innerHeight * 0.8 > elem.offsetTop) {
+    if (
+      window.scrollY + window.innerHeight * 0.8 > elem.offsetTop ||
+      window.scrollY + window.innerHeight >
+        document.documentElement.scrollHeight * 0.97
+    ) {
       elem.classList.add("animated");
       if (
         elem.classList.contains("rgx-iframe") ||
