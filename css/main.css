@@ -4,6 +4,15 @@ body {
   color: #f9fbff;
   margin: 0;
   background-color: #013997; }
+  body::before {
+    content: "";
+    position: fixed;
+    background-image: url("../assets/background-image.png");
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    transform: translateZ(1000px); }
 
 @media (min-width: 1500px) {
   body {
@@ -189,6 +198,15 @@ h2 {
   align-items: center;
   box-sizing: border-box;
   padding: 1em 7%; }
+  .rgx-header::before {
+    content: "";
+    position: fixed;
+    background-image: url("../assets/background-image.png");
+    display: block;
+    height: 5em;
+    width: 100%;
+    opacity: 0.6;
+    transform: translateZ(1000px); }
 
 .rgx-header-link {
   text-decoration: none;
@@ -261,7 +279,9 @@ h2 {
   .animation-delay-7 {
     animation-delay: 0s; }
   .rgx-logo {
-    display: none; } }
+    display: none; }
+  .rgx-header::before {
+    height: 4em; } }
 
 .rgx-footer {
   font-size: 0.8125em;

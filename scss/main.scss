@@ -7,12 +7,29 @@ $secondary-color: #00ebe2;
 $tertiary-color: #2100f0;
 $light-color: #f9fbff;
 
+$backround-image-url: "../assets/background-image.png";
+
+@mixin background-texture($height: 100%) {
+  &::before {
+    content: "";
+    position: fixed;
+    background-image: url($backround-image-url);
+    display: block;
+    height: $height;
+    width: 100%;
+    opacity: 0.6;
+    transform: translateZ(1000px);
+  }
+}
+
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: $light-color;
   margin: 0;
   background-color: $main-color-2;
+
+  @include background-texture();
 }
 
 @media (min-width: 1500px) {
@@ -242,6 +259,8 @@ h2 {
   align-items: center;
   box-sizing: border-box;
   padding: 1em 7%;
+
+  @include background-texture(5em);
 }
 
 .rgx-header-link {
@@ -347,6 +366,10 @@ h2 {
 
   .rgx-logo {
     display: none;
+  }
+
+  .rgx-header::before {
+    height: 4em;
   }
 }
 
