@@ -72,19 +72,13 @@ body {
   align-items: center;
 }
 
-@media (max-width: 850px) {
-  .rgx-header-section {
-    flex-direction: column;
-    padding-bottom: 10vh;
-  }
-}
-
 .rgx-logo-header {
   width: 100%;
   max-width: 40em;
 }
 
-.rgx-header-section > div {
+.rgx-header-section-left,
+.rgx-header-section-right {
   margin: 3em;
 }
 
@@ -463,5 +457,22 @@ h2 {
 
   &.fadeOutUp {
     cursor: default;
+  }
+}
+
+#rgx-tagline {
+  position: absolute;
+  bottom: 20vh;
+}
+
+@media (max-width: 850px) {
+  .rgx-header-section {
+    flex-direction: column;
+    padding-bottom: 10vh;
+  }
+
+  #rgx-tagline {
+    position: unset;
+    bottom: unset;
   }
 }
